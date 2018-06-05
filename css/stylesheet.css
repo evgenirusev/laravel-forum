@@ -7,25 +7,59 @@ body{
 
 .container{
   margin:auto;
-  overflow:hidden;
+  overflow:auto;
 }
 
 header{
+  height: 850px;
   padding-top:30px;
   min-height:70px;
+  background-image: url(http://87.126.65.13/wordpress/wp-content/uploads/2017/12/cropped-22119287_1404409919608050_1325298470_n.png);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 header nav{
   float:right;
-  margin-top:10px;
+  margin-top:20px;
+  margin-right: 150px;
 }
 
 header li{
-  float:left;
-  display:inline;
-  padding: 0 20px 0 20px;
+	float:left;
+	display:inline;
+	padding: 0 20px 0 20px;
+}
+
+header li a {
+	font-size: 24px;
+  	color: #000000;
+  	text-decoration: none;
 }
 
 header #branding{
   float:left;
+  margin-left: 40px;
+  margin-top: 20px;
+}
+
+header .bottom-header {
+	text-align: center;
+}
+
+.text-center h1 {
+	margin-top: 70px;
+	margin-bottom: 5px;
+	font-size: 65px;
+    line-height: 70px;
+    font-weight: 700;
+}
+
+.sub-text-center h2 {
+	color: #507fe2;
+    font-size: 24px;
+    margin-bottom: 0;
+    margin: 0 0 10px;
 }
