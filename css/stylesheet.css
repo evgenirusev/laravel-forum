@@ -230,7 +230,38 @@ header .bottom-header {
   border: 2px solid #F0E68C;
 }
 
+header li a:hover {
+  color: #508ae8;
+}
+
 .form {
   width:80%;
   margin:auto;
+}
+
+/* About us */
+
+#about-header {
+  text-align: center;
+}
+
+#about-section {
+  padding-top: 50px;
+  background-color: #F8F8FF;
+  margin:auto;
+  width:70%;
+  height: 505px;
+  border-radius: 18px;
+}
+
+#avatar {
+  float:left;
+  width:37%;
+  margin-left:6%;
+}
+
+.about-description {
+  float:right;
+  width:41%;
+  margin-right:10%;
 }

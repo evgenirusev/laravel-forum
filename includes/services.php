@@ -32,7 +32,7 @@
               <div class="box">
                 <img src="https://achievement-images.teamtreehouse.com/badges_DD_bizblogging_stage3.png">
                 <h3>Monetization</h3>
-                <p>We offer smart and efficient monetization strategies such as PPC, CPA and Affiliate Marketing. We are experienced in analising statistical traffic data which lets us optimize our strategy to achieve maximum monetization efficiency.</p>
+                <p>We offer smart and efficient monetization strategies such as PPC, CPA and Affiliate Marketing. We are experienced in analising statistical traffic data which lets us optimize our strategy to achieve maximum conversion rate efficiency.</p>
               </div>
             </div>
           </div>
