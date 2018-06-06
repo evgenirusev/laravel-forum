@@ -19,6 +19,7 @@ header{
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  border-bottom: 1px solid blue;
 }
 
 header nav{
@@ -62,4 +63,43 @@ header .bottom-header {
     font-size: 24px;
     margin-bottom: 0;
     margin: 0 0 10px;
+}
+
+#showcase {
+  background-size: 1300px;
+  background-image: url("https://ethereum.org/images/token-bg.jpg");
+  background-attachment: fixed;
+}
+
+#first-showcase-title {
+  position: relative;
+  margin: 0;
+  margin-bottom: 0px;
+  padding-top: 100px;
+  padding-left: 100px;
+  margin-bottom: 100px;
+  text-align: center;
+  font-size: 35px;
+  line-height: 38px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+#first-showcase-p {
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  font-size: 20px;
+  color: #ffffff;
+}
+
+.showcase-img img {
+  width:700px;
+  height: 300px;
+  float:right;
+}
+
+.grid {
+  display:grid;
+  grid-template-columns: 60% 23%;
 }
