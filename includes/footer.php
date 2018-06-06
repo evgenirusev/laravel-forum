@@ -2,7 +2,7 @@
       <div class="container">
             <div class="footer-content">
               <p id="footer-copyright">
-                © Copyright 2018 <a href="#">Rusev Web Services</a> - All Rights Reserved
+                © Copyright 2018 <a href="#">Rusev Web Solutions</a> - All Rights Reserved
               </p>
             </div>
       </div>

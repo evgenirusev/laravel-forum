@@ -221,6 +221,8 @@ header .bottom-header {
   height: 30px;
   background-color:#f1d204;
   color:#507fe2;
+  font-weight: 550;
+  font-size: 15px;
 }
 
 .btn input:hover {
