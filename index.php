@@ -1,2 +1,2 @@
 <?php
-include realpath("content/index.html");
+include realpath("content/index.php");

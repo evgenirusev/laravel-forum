@@ -69,6 +69,8 @@ header .bottom-header {
   background-size: 1300px;
   background-image: url("https://ethereum.org/images/token-bg.jpg");
   background-attachment: fixed;
+  padding-bottom:80px;
+  border-bottom: 1px solid blue;
 }
 
 #first-showcase-title {
@@ -102,4 +104,51 @@ header .bottom-header {
 .grid {
   display:grid;
   grid-template-columns: 60% 23%;
+}
+
+.services-section {
+  background-image: url("https://ethereum.org/images/dao-dawn-bg.jpg");
+  display: inline-block;
+  width: 100%;
+  background-attachment: fixed;
+  color:#ffffff;
+}
+
+.services-section h3 {
+  font-size: 35px;
+  line-height: 38px;
+  font-weight: 700;
+  color: #ffffff;
+  text-align: center;
+}
+
+.box{
+  padding:;
+  float:left;
+  text-align: center;
+  width:33.3%;
+}
+
+ .box img{
+  width:180px;
+}
+
+.box p {
+  padding-left:40px;
+
+}
+
+#footer{
+    padding: 30px 0;
+    text-align: center;
+    background-color: #242320;
+}
+
+#footer-copyright {
+  color: #ffffff;
+}
+
+#footer-copyright a {
+  text-decoration: none;
+  color: #ffffff;
 }
