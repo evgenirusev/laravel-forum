@@ -15,3 +15,5 @@
 	</div>
 	<img id="avatar" src="../img/rusev.jpg"></section>
 </section>
+<br>
+<br>
