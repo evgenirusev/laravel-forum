@@ -152,3 +152,83 @@ header .bottom-header {
   text-decoration: none;
   color: #ffffff;
 }
+
+#contact {
+  background-image: url(https://cdn.ripple.com/wp-content/themes/ripple-beta/assets/img/home/home-bg-new.jpg);
+  background-size: 1980px;
+  color: #ffffff;
+}
+
+#contact h3 {
+  font-size: 35px;
+  line-height: 38px;
+  font-weight: 700;
+  margin-top: 0px;
+  padding-top: 30px;
+  margin-bottom: 10px;
+}
+
+#contact p {
+  line-height: 26px;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.text-input input {
+  border-radius: 6px;
+  border-color: grey;
+  background-color: white;
+  color: black;
+  width: 300px;
+  padding: 5px 10px;
+  border: 1px solid #d7d7d7;
+  outline: 0;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  color: #8c9597;
+  resize: none;
+  display: block;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.text-input textarea {
+  border-radius: 6px;
+  border-color: grey;
+  background-color: white;
+  padding: 5px 10px;
+  border: 1px solid #d7d7d7;
+  outline: 0;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  color: #8c9597;
+  resize: none;
+  display: block;
+  font-size: 16px;
+  line-height: 26px;
+  margin-bottom: 30px;
+  width: 400px;
+  height: 150px;
+}
+
+.btn input{
+  cursor: pointer;
+  margin-bottom: 69px;
+  border-radius: 2px;
+  border: 2px solid #f1d204;;
+  width: 120px;
+  height: 30px;
+  background-color:#f1d204;
+  color:#507fe2;
+}
+
+.btn input:hover {
+  background-color:#F0E68C;
+  border: 2px solid #F0E68C;
+}
+
+.form {
+  width:80%;
+  margin:auto;
+}
