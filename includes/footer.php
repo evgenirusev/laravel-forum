@@ -7,7 +7,7 @@
             </div>
       </div>
   </section>
-  <script src="http://localhost/rusevProjects/rusev.net/js/jquery-3.3.1.min.js"></script>
-  <script src="http://localhost/rusevProjects/rusev.net/js/script.js"></script>
+  <script src="../js/jquery-3.3.1.min.js"></script>
+  <script src="../js/script.js"></script>
 </body>
 </html>

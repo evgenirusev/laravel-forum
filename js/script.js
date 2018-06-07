@@ -3,13 +3,13 @@ $( "#btn" ).on( "click", function() {
 	if ( $('#responsive-menu').css('display') == 'none' ){
     	$('#responsive-menu').slideDown();
         switch(url) {
-            case "http://localhost/rusevProjects/rusev.net/":
+            case "http://intersolutions.ml/":
                 $('#responsive-menu ul li:last-child').css('margin-bottom', '70px');
                 break;
-            case "http://localhost/rusevProjects/rusev.net/content/about.php":
+            case "http://intersolutions.ml/content/about.php":
                 $('#responsive-menu ul li:last-child').css('margin-bottom', '20px');
                 break;
-            case "http://localhost/rusevProjects/rusev.net/content/contact.php":
+            case "http://intersolutions.ml/content/contact.php/":
                 $('#responsive-menu ul li:last-child').css('margin-bottom', '20px');
                 break;
         }
