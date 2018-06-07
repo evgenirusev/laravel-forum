@@ -1,4 +1,4 @@
-		<div id="responsive-menu">
+		<div class="hidden" id="responsive-menu">
 			<ul>
 	          <li><a href="http://localhost/rusevProjects/rusev.net/">Home</a></li>
 	          <li><a href="http://localhost/rusevProjects/rusev.net/content/about.php">About</a></li>

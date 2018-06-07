@@ -1,6 +1,6 @@
 <body class="container">
   <header>
-    <div class="container"> 
+    <div class="container" id="upper-header"> 
       <div id="branding">
         <img src="https://image.ibb.co/evO8f8/rusev_logo.png" alt="R-logo">
       </div>
