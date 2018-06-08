@@ -1,0 +1,467 @@
+body{
+  font: 15px/1.5 Arial, Helvetica,sans-serif;
+  padding:0;
+  margin:0;
+  background-color:#f4f4f4;
+}
+
+.container{
+  margin:auto;
+  overflow:auto;
+}
+
+header{
+  width: 100%;
+  height: 850px;
+  min-height:70px;
+  background-image: url(https://image.ibb.co/e2g7dT/cropped_22119287_1404409919608050_1325298470_n.png);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-bottom: 1px solid blue;
+  heigth: auto;
+}
+
+header nav{
+  float:right;
+  margin-top:20px;
+  margin-right: 150px;
+  }
+
+header li{
+	float:left;
+	display:inline;
+	padding: 0 20px 0 20px;
+}
+
+header li a {
+	font-size: 24px;
+  	color: #000000;
+  	text-decoration: none;
+}
+
+header #branding{
+  float:left;
+  
+}
+
+header .bottom-header {
+	text-align: center;
+}
+
+#responsive-menu li{
+      display:none;
+  }
+
+.text-center h1 {
+	margin-top: 70px;
+	margin-bottom: 5px;
+	font-size: 65px;
+    line-height: 70px;
+    font-weight: 700;
+}
+
+.sub-text-center h2 {
+	color: #507fe2;
+    font-size: 24px;
+    margin-bottom: 0;
+    margin: 0 0 10px;
+}
+
+#showcase {
+  background-size: 1300px;
+  background-image: url("https://ethereum.org/images/token-bg.jpg");
+  background-attachment: fixed;
+  padding-bottom:80px;
+  border-bottom: 1px solid blue;
+  display:inline-block;
+}
+
+#first-showcase-title {
+  text-align: center;
+  padding-top: 100px;
+  margin-bottom: 100px;
+  text-align: center;
+  font-size: 35px;
+  line-height: 38px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+#first-showcase-p {
+  margin-right: 4%;
+  width: 42%
+  float:right;
+  text-align: center;
+  font-family: arial;
+  font-size: 20px;
+  color: #ffffff;
+}
+
+.showcase-img img {
+  margin-left:4%;
+  width:55%;
+  float:left;
+  height: 350px;
+}
+
+
+.services-section {
+  background-image: url("https://ethereum.org/images/dao-dawn-bg.jpg");
+  display: inline-block;
+  width: 100%;
+  background-attachment: fixed;
+  color:#ffffff;
+}
+
+.services-section h3 {
+  font-size: 35px;
+  line-height: 38px;
+  font-weight: 700;
+  color: #ffffff;
+  text-align: center;
+}
+
+.box{
+  float:left;
+  text-align: center;
+  width:33.3%;
+}
+
+ .box img{
+  width:180px;
+}
+
+.box p {
+  padding-left:40px;
+
+}
+
+#footer{
+    padding: 30px 0;
+    text-align: center;
+    background-color: #242320;
+}
+
+#footer-copyright {
+  color: #ffffff;
+}
+
+#footer-copyright a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+#contact {
+  background-image: url(https://cdn.ripple.com/wp-content/themes/ripple-beta/assets/img/home/home-bg-new.jpg);
+  background-size: 1980px;
+  color: #ffffff;
+}
+
+#contact h3 {
+  font-size: 35px;
+  line-height: 38px;
+  font-weight: 700;
+  margin-top: 0px;
+  padding-top: 30px;
+  margin-bottom: 10px;
+}
+
+#contact p {
+  line-height: 26px;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.text-input input {
+  border-radius: 6px;
+  border-color: grey;
+  background-color: white;
+  color: black;
+  width: 300px;
+  padding: 5px 10px;
+  border: 1px solid #d7d7d7;
+  outline: 0;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  color: #8c9597;
+  resize: none;
+  display: block;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.text-input textarea {
+  border-radius: 6px;
+  border-color: grey;
+  background-color: white;
+  padding: 5px 10px;
+  border: 1px solid #d7d7d7;
+  outline: 0;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  color: #8c9597;
+  resize: none;
+  display: block;
+  font-size: 16px;
+  line-height: 26px;
+  width: 400px;
+  height: 150px;
+}
+
+.btn input{
+  margin-top:30px;
+  cursor: pointer;
+  margin-bottom: 69px;
+  border-radius: 2px;
+  border: 2px solid #f1d204;;
+  width: 120px;
+  height: 30px;
+  background-color:#f1d204;
+  color:#507fe2;
+  font-weight: 550;
+  font-size: 15px;
+}
+
+.btn input:hover {
+  background-color:#F0E68C;
+  border: 2px solid #F0E68C;
+}
+
+header li a:hover {
+  color: #508ae8;
+}
+
+.form {
+  width:80%;
+  margin:auto;
+}
+
+/* About us */
+
+#about-header {
+  text-align: center;
+}
+
+#about-section {
+  padding-top: 50px;
+  background-color: #F8F8FF;
+  margin:auto;
+  width:70%;
+  height: 505px;
+  border-radius: 18px;
+}
+
+#avatar {
+  float:left;
+  width:37%;
+  margin-left:6%;
+}
+
+.about-description {
+  float:right;
+  width:41%;
+  margin-right:10%;
+}
+
+
+#btn {
+  display:none;
+}
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 830px) {
+  nav {
+    display:none;
+  }
+
+  #branding img{
+    float:left;
+    margin-left: 15px;
+    margin-top: 15px;
+    margin-right: 0px;
+    margin-bottom: 15px;
+    width:70%;
+  }
+
+  #btn {
+    display: unset;
+    float:right;
+    width:50px;
+    height:50px;
+    margin-left: 0px;
+    margin-top: 8px;
+    margin-right: 15px;
+    margin-bottom:8px;
+
+  }
+
+  #responsive-menu li{
+    float: right;
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    display: inline-block;
+    border-bottom: 1px solid #e4e4e4;
+    color: #000;
+    text-align: center;
+    background-color:#ffffff;
+    position:relative;
+  }
+
+  #responsive-menu {
+    display: none;
+  }
+
+  .text-center h1 {
+    margin-top: 70px;
+    margin-bottom: 5px;
+    font-size: 55px;
+    line-height: 70px;
+    font-weight: 600;
+  }
+
+  #first-showcase-title{
+    text-align: center;
+    font-size: 27px;
+    line-height: 38px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 40px;
+  }
+
+  .showcase-img img {
+    height: 200px;
+    margin-left:20%;
+    margin-right:20%;
+    margin-bottom:40px;
+  }
+
+  #first-showcase-p {
+    float: none;
+    margin:none;
+    width:90%;
+    margin-left:30px;
+    margin-right:10px;
+  }
+
+  .box {
+    all: none;
+    width: 100%;
+  }
+
+  .box p {
+    font-size: 23px;
+  }
+
+  .box img{
+    all:none;
+  }
+
+  .box p {
+    all:none;
+    padding:18px;
+  }
+
+  .box h3 {
+    font-size:30px
+  }
+
+  .box h3 {
+    font-size:29px
+  }
+}
+
+@media only screen and (max-width: 706px){
+    .box h3 {
+    font-size:26px;
+    }
+}
+
+@media only screen and (max-width: 616px){
+    .showcase-img img {
+      margin:0;
+      width:100%;
+      margin-bottom:20px;
+    }
+
+    .box {
+      width: 100%;
+    }
+    .box h3{
+      margin-bottom: 10px;
+      margin-top: 10px;
+      font-size:39px;
+    }
+    .box p{
+      font-size:23px
+    }
+
+    .text-input textarea {
+      width: 280px;
+    }
+
+  .text-input input {
+    border-radius: 6px;
+    border-color: grey;
+    background-color: white;
+    color: black;
+    width: 240px;
+    padding: 5px 10px;
+    border: 1px solid #d7d7d7;
+    outline: 0;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+  }
+
+}
+
+@media only screen and (max-width: 1070px){
+
+    #avatar {
+      display:none;
+  }
+
+  .about-description {
+      text-align: center;
+      width:80%;
+  }
+
+}
+
+@media only screen and (max-width: 680px){
+    #about-section {
+      padding-top: 0px;
+      background-color: #F8F8FF;
+      margin:auto;
+      height: 580px;
+      width:90%;
+      border-radius: 18px;
+    }
+
+    .about-description {
+      text-align: center;
+      width:80%;
+    }
+
+    .about-description h3{
+      margin:0;
+      padding:0;
+    }
+}
+
+/* Form Validation */
+
+.validation-p p {
+  margin:0;
+  color:#f39999;
+  display:none;
+}
+
+#validate-sent {
+  color:#99ff99;
+  display:none;
+}
