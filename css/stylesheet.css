@@ -207,12 +207,12 @@ header .bottom-header {
   display: block;
   font-size: 16px;
   line-height: 26px;
-  margin-bottom: 30px;
   width: 400px;
   height: 150px;
 }
 
 .btn input{
+  margin-top:30px;
   cursor: pointer;
   margin-bottom: 69px;
   border-radius: 2px;
@@ -353,7 +353,9 @@ header li a:hover {
     width: 100%;
   }
 
-
+  .box p {
+    font-size: 23px;
+  }
 
   .box img{
     all:none;
@@ -371,15 +373,15 @@ header li a:hover {
   .box h3 {
     font-size:29px
   }
-  }
+}
 
-  @media only screen and (max-width: 706px){
+@media only screen and (max-width: 706px){
     .box h3 {
     font-size:26px;
     }
-  }
+}
 
-  @media only screen and (max-width: 616px){
+@media only screen and (max-width: 616px){
     .showcase-img img {
       margin:0;
       width:100%;
@@ -415,9 +417,9 @@ header li a:hover {
     font-weight: 400;
   }
 
-  }
+}
 
-  @media only screen and (max-width: 1070px){
+@media only screen and (max-width: 1070px){
 
     #avatar {
       display:none;
@@ -428,9 +430,9 @@ header li a:hover {
       width:80%;
   }
 
-  }
+}
 
-  @media only screen and (max-width: 680px){
+@media only screen and (max-width: 680px){
     #about-section {
       padding-top: 0px;
       background-color: #F8F8FF;
@@ -449,7 +451,12 @@ header li a:hover {
       margin:0;
       padding:0;
     }
+}
 
-  }
+/* Form Validation */
 
+.validation-p p {
+  margin:0;
+  color:#f39999;
+  display:none;
 }

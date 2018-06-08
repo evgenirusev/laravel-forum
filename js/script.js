@@ -1,20 +1,51 @@
-var url = window.location.href; 
-$( "#btn" ).on( "click", function() {
-	if ( $('#responsive-menu').css('display') == 'none' ){
-    	$('#responsive-menu').slideDown();
-        switch(url) {
-            case "http://intersolutions.ml/":
-                $('#responsive-menu ul li:last-child').css('margin-bottom', '70px');
-                break;
-            case "http://intersolutions.ml/content/about.php":
-                $('#responsive-menu ul li:last-child').css('margin-bottom', '20px');
-                break;
-            case "http://intersolutions.ml/content/contact.php/":
-                $('#responsive-menu ul li:last-child').css('margin-bottom', '20px');
-                break;
-        }
-    } else {
-     	$('#responsive-menu ul li:last-child').css('margin-bottom', '0px')
-    	$('#responsive-menu').slideUp();
+$(function() {
+    var url = window.location.href;
+
+    function validateEmail(email) {
+        var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        return re.test(String(email).toLowerCase());
     }
+
+    $(".email input").on('blur', function() {
+        var string = $(".email input").val();
+        if(!validateEmail(string)) {
+            $('#validate-email').css('display','unset');
+            let error = true;
+        } else {
+            $('#validate-email').css('display','none');
+            let error = false;
+        }
+    });
+
+    $(".subject input").on('blur', function() {
+        var string = $(".subject input").val();
+        if(string.length<4) {
+            $('#validate-subject').css('display','unset');
+            let error = true;
+        } else {
+            $('#validate-subject').css('display','none');
+            let error = false;
+        }
+    });
+
+    $(".msg textarea").on('blur', function() {
+        var string = $(".msg textarea").val();
+        if(string.length<8) {
+            $('#validate-msg').css('display','unset');
+            let error = true;
+        } else {
+            $('#validate-msg').css('display','none');
+            let error = false;
+        }
+    });
+
+
+    $( "form" ).submit(function( event ) {
+        if(1) {
+            console.log(error);
+            event.preventDefault();
+        }
+        
+    });
+
 });
