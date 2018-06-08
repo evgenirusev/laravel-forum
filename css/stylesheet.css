@@ -378,6 +378,12 @@ header li a:hover {
   }
 
   @media only screen and (max-width: 616px){
+    .showcase-img img {
+      margin:0;
+      width:100%;
+      margin-bottom:20px;
+    }
+
     .box {
       width: 100%;
     }
@@ -391,7 +397,7 @@ header li a:hover {
     }
 
     .text-input textarea {
-      width: 310px;
+      width: 280px;
     }
 
   .text-input input {
@@ -399,7 +405,7 @@ header li a:hover {
     border-color: grey;
     background-color: white;
     color: black;
-    width: 250px;
+    width: 240px;
     padding: 5px 10px;
     border: 1px solid #d7d7d7;
     outline: 0;
