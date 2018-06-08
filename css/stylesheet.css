@@ -266,6 +266,7 @@ header li a:hover {
   margin-right:10%;
 }
 
+
 #btn {
   display:none;
 }
@@ -370,6 +371,7 @@ header li a:hover {
   .box h3 {
     font-size:29px
   }
+  }
 
   @media only screen and (max-width: 706px){
     .box h3 {
@@ -412,6 +414,41 @@ header li a:hover {
     font-family: "Lato", sans-serif;
     font-weight: 400;
   }
+
+  }
+
+  @media only screen and (max-width: 1070px){
+
+    #avatar {
+      display:none;
+  }
+
+  .about-description {
+      text-align: center;
+      width:80%;
+  }
+
+  }
+
+  @media only screen and (max-width: 680px){
+    #about-section {
+      padding-top: 0px;
+      background-color: #F8F8FF;
+      margin:auto;
+      height: 580px;
+      width:90%;
+      border-radius: 18px;
+    }
+
+    .about-description {
+      text-align: center;
+      width:80%;
+    }
+
+    .about-description h3{
+      margin:0;
+      padding:0;
+    }
 
   }
 
