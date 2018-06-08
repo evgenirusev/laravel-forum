@@ -9,7 +9,7 @@
 		  </div>
 	</footer>
 </section>
-  <script src="../rusev.net-linux/js/jquery-3.3.1.min.js"></script>
-  <script src="../rusev.net-linux/js/script.js"></script>
+  <script src="http://intersolutions.ml/js/jquery-3.3.1.min.js"></script>
+  <script src="http://intersolutions.ml/js/script.js"></script>
 </body>
 </html>

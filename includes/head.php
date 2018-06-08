@@ -7,5 +7,5 @@
   <meta name="keywords" content="web services, web development">
   <meta name="author" content="Evgeni Rusev">
   <title>Rusev Web Solutions &#8211; Web Development Services</title>
-  <link rel="stylesheet" type="text/css" href="http://localhost/rusev.net-linux/css/stylesheet.css">
+  <link rel="stylesheet" type="text/css" href="http://intersolutions.ml/css/stylesheet.css">
 </head>

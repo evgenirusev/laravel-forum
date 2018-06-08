@@ -6,6 +6,27 @@ $(function() {
     let email;
     let subject;
     let msg;
+
+    $( "#btn" ).on( "click", function(){
+    if ( $('#responsive-menu').css('display') == 'none' ){
+        $('#responsive-menu').slideDown();
+        switch(url) {
+            case "http://intersolutions.ml/":
+                $('#responsive-menu ul li:last-child').css('margin-bottom', '70px');
+               break;
+            case "http://intersolutions.ml/content/about.php":
+                $('#responsive-menu ul li:last-child').css('margin-bottom', '20px');
+                break;
+            case "http://intersolutions.ml/content/contact.php/":
+                $('#responsive-menu ul li:last-child').css('margin-bottom', '20px');
+                break;
+          }
+    } else {
+     	$('#responsive-menu ul li:last-child').css('margin-bottom', '0px')
+    	$('#responsive-menu').slideUp();
+    }
+    });
+
     function validateEmail(email) {
         var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
         return re.test(String(email).toLowerCase());
@@ -59,18 +80,25 @@ $(function() {
 
             var params = "email="+email+"&subject="+subject+"&msg="+msg;
             var xhr = new XMLHttpRequest();
-            xhr.open('POST', 'processor/ajax-processor.php', true);
+            xhr.open('POST', 'http://intersolutions.ml/processor/ajax-processor.php', true);
             xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
 
             xhr.onload = function(){
-                console.log(this.responseText);
+                if (this.status==200) {
+                  $(".subject input").val("");
+                  $(".email input").val("");
+                  $(".msg textarea").val("");
+                  $("#validate-sent").css("display","unset");
+                  console.log(this.responseText);
+                } else {
+                  alert("Your message was not sent, please try again laster.");
+                  $(".email input").val("");
+                  $(".msg textarea").val("");
+                  $("#validate-sent").css("display","unset");
+                }
             }
 
             xhr.send(params);
-
-            //$("#validate-sent").css("display","unset");
         }
-        
     });
-
 });
