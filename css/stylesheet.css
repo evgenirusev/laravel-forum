@@ -460,3 +460,8 @@ header li a:hover {
   color:#f39999;
   display:none;
 }
+
+#validate-sent {
+  color:#99ff99;
+  display:none;
+}

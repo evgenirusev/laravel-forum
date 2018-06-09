@@ -1,7 +1,7 @@
 <section>
 	<div id="contact">
 		<div class="form">
-			<form method='POST'>
+			<form id="form">
 			<div>
 				<h3>Contact us</h3>
 			</div>
@@ -17,6 +17,7 @@
 					<div class="msg">
 						<p class="msg-p">Message:</p><textarea class="input-text" placeholder="Message: Please be specific ..." type='textarea' name = 'query'></textarea>
 						<div class="validation-p"><p id="validate-msg">Message must be atleast 8 characters long</p></div>
+						<div class="sent-p"><p id="validate-sent">Success! We shall recieve Your message shortly.</p></div>
 					</div>
 				</div>
 				<div class="btn">
