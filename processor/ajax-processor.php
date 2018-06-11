@@ -1,5 +1,4 @@
 <?php
-
   $user = "root";
   $pass = "123";
   $dsn = 'mysql:host=localhost;dbname=rusev.net';

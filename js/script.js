@@ -1,8 +1,8 @@
 $(function() {
     var url = window.location.href;
-    let emailError = true;
-    let subjectError = true;
-    let msgError = true;
+    let emailError;
+    let subjectError;
+    let msgError;
     let email;
     let subject;
     let msg;
