@@ -14,5 +14,10 @@
 Route::get('/', 'PostsController@index');
 Route::resource('posts', 'PostsController');
 
+Route::get('contact', function() {
+  return view('contact');
+})->name('contact');
+
+
 Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');

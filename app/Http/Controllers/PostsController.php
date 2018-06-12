@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class PostsController extends Controller
 {
@@ -13,7 +14,8 @@ class PostsController extends Controller
      */
     public function index()
     {
-        echo 'index';
+  	  $posts = \App\Post::paginate(5);
+  		return view('posts.index', ['posts' => $posts]);
     }
 
     /**
@@ -38,9 +40,18 @@ class PostsController extends Controller
 			'title' => 'required',
 			'description' => 'required|min:5'
 		]);
-		
-		
-		
+
+		$post = new \App\Post();
+
+		$post->title = $request->title;
+		$post->description = $request->description;
+
+		if($post->save()){
+            return redirect()->route('posts.show', ['id' => $post->id]);
+        } else {
+            return redirect()->route('posts.create');
+        }
+
     }
 
     /**
@@ -51,7 +62,8 @@ class PostsController extends Controller
      */
     public function show($id)
     {
-        //
+      $data = \App\Post::findOrFail($id);
+      return view('posts.show')->with('post', $data);
     }
 
     /**
