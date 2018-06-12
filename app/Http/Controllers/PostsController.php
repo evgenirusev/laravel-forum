@@ -13,7 +13,7 @@ class PostsController extends Controller
      */
     public function index()
     {
-        return view("welcome");
+        echo 'index';
     }
 
     /**
@@ -23,7 +23,7 @@ class PostsController extends Controller
      */
     public function create()
     {
-        
+        return view('posts.create');
     }
 
     /**
@@ -34,7 +34,13 @@ class PostsController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $validatedData = $this->validate($request, [
+			'title' => 'required',
+			'description' => 'required|min:5'
+		]);
+		
+		
+		
     }
 
     /**
