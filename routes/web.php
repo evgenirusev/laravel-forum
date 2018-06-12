@@ -14,9 +14,8 @@
 Route::get('/', 'PostsController@index');
 Route::resource('posts', 'PostsController');
 
-Route::get('contact', function() {
-  return view('contact');
-})->name('contact');
+Route::get('contact', function() { return view('contact'); })->name('contact');
+Route::get('about', function() { return view('about'); })->name('about');
 
 
 Auth::routes();

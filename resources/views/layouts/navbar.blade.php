@@ -12,7 +12,7 @@
         <a class="nav-link" href="{{ route('contact') }}">Contact</a>
       </li>
       <li class="nav-item h3">
-        <a class="nav-link" href="http://localhost/forum/public/about">About</a>
+        <a class="nav-link" href="{{ route('about') }}">About</a>
       </li>
     </ul>
   </div>

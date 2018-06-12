@@ -62,8 +62,12 @@ class PostsController extends Controller
      */
     public function show($id)
     {
-      $data = \App\Post::findOrFail($id);
+      //$data = \App\Post::findOrFail($id);
+      $post = new \App\Post();
+      echo $post->comments()->get();
+      /*
       return view('posts.show')->with('post', $data);
+      */
     }
 
     /**
