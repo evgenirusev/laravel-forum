@@ -15,12 +15,12 @@ class CreatePostsTable extends Migration
     {
         Schema::create('posts', function (Blueprint $table) {
             $table->increments('id');
-			$table->string('title');
+			      $table->string('title');
             $table->text('description');
-			$table->timestamps();
+			      $table->timestamps();
         });
     }
-	
+
     /**
      * Reverse the migrations.
      *
