@@ -15,6 +15,11 @@ class CommentsController extends Controller
      */
     public function store(Request $request)
     {
+
+      $this->validate($request, [
+        'body' => 'required|min:4'
+      ]);
+
       $post = \App\Post::findOrFail($request->postId);
       $comment = new \App\Comment();
       $comment->body = $request->body;
@@ -22,6 +27,7 @@ class CommentsController extends Controller
       $comment->user()->associate(auth::id());
       $post->comments()->save($comment);
 
+      return back();
     }
 
     /**

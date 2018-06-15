@@ -39,13 +39,26 @@
 		</div>
 		<br>
 		<!-- Single Comment -->
-		<div class="media mb-4">
-			<img class="d-flex mr-3 rounded-circle" src="http://placehold.it/50x50" alt="">
-			<div class="media-body">
-				<h5 class="mt-0">Commenter Name</h5>
-				Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-			</div>
-		</div>
+		@if ($post->comments->count() > 0)
+		@foreach ($post->comments as $comment)
+				<div class="card card-body bg-light" >
+	  	 			<div class="card-block">
+						<p class="card-text">
+							{{ $comment->body }}
+						</p>
+						<h6 class='float-right'>Answer By: {{ $comment->user->name }}, {{ $comment->created_at->diffForHumans() }}</h6>
+					</div>
+				</div>
+				<hr>
+			@endforeach
+			@else
+			<hr>
+			<p>
+				There are no answers yet
+			</p>
+			<hr>
+		@endif
+
 	</div>
 </div>
 @endsection('content')
