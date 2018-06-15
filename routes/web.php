@@ -6,5 +6,9 @@ Route::get('/', 'PostsController@index')->name('home');
 Route::get('contact', function() { return view('contact'); })->name('contact');
 Route::get('about', function() { return view('about'); })->name('about');
 
-Route::get('/register', 'RegisterController@create');
+Route::get('/register', 'RegisterController@create')->name('register');
 Route::post('/register', 'RegisterController@store');
+
+Route::get('login', 'SessionController@create')->name('login');
+Route::post('login', 'SessionController@store');
+Route::get('logout', 'SessionController@destroy');

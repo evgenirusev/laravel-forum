@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Auth;
 
 class PostsController extends Controller
 {
@@ -36,15 +37,16 @@ class PostsController extends Controller
      */
     public function store(Request $request)
     {
-        $validatedData = $this->validate($request, [
-			'title' => 'required',
-			'description' => 'required|min:5'
+      $validatedData = $this->validate($request, [
+			'title' => 'required|min:2',
+			'description' => 'required|min:8'
 		]);
 
 		$post = new \App\Post();
 
 		$post->title = $request->title;
 		$post->description = $request->description;
+    $post->user()->associate(auth::id());
 
 		if($post->save()){
             return redirect()->route('posts.show', ['id' => $post->id]);
@@ -62,12 +64,8 @@ class PostsController extends Controller
      */
     public function show($id)
     {
-      //$data = \App\Post::findOrFail($id);
-      $post = new \App\Post();
-      echo $post->comments()->get();
-      /*
-      return view('posts.show')->with('post', $data);
-      */
+      $post = \App\Post::find($id);
+      return view('posts.show', ['post' => $post]);
     }
 
     /**

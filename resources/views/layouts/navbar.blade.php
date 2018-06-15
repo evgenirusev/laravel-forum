@@ -24,18 +24,18 @@
         <a href="{{route('posts.create')}}" class="btn btn-primary">Ask A Question</a>
       </li>
       @guest
-      <li class="nav-item h3">
-        <a class="nav-link" href="#">Log In</a>
+      <li class="nav-item h5">
+        <a class="nav-link" href="login">Log In</a>
       </li>
-      <li class="nav-item h3">
+      <li class="nav-item h5">
         <a class="nav-link" href="register">Register</a>
       </li>
       @else
-      <li class="nav-item h3">
-        <a class="nav-link" href="#">Username</a>
+      <li class="nav-item h5">
+        <a class="nav-link" href="#">{{auth()->user()->name}}</a>
       </li>
-      <li class="nav-item h3">
-        <a class="nav-link" href="#">Log Out</a>
+      <li class="nav-item h5">
+        <a class="nav-link" href="logout">Log Out</a>
       </li>
       @endguest
     </ul>

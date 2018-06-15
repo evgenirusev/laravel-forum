@@ -1,6 +1,7 @@
 @extends('default')
 
 @section('content')
+<br><br>
 		<form action='#' method=""  class="form-control" >
 			@csrf
 			<label for="title">Email</label>

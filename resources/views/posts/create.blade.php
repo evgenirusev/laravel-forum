@@ -12,11 +12,11 @@
 			<div class="form-group">
 				<input type="submit" class="btn btn-primary" value="Submit Post">
 			</div>
-			
+
 			@include ('layouts.errors')
-			
+
 		</form>
-		
+
 	<!-- Margin for the footer -->
 	<br><br><br><br><br>
 @endsection(content)
