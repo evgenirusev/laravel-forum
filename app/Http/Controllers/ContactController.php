@@ -19,13 +19,19 @@ class ContactController extends Controller
         'subject' => 'required'
       ]);
 
-      $msg = new \App\ContactMessage();
+      $msg = new \App\Contact();
 
       $msg->name = $request->name;
       $msg->email = $request->email;
       $msg->subject = $request->subject;
-      $msg->message = $request->content;
+      $msg->message = $request->message;
 
-      return redirect()->back()->with('message', 'Thanks for contacting us! We will be in touch with you shortly.');
+      if($msg->save()) {
+        return redirect()->back()->with('message', 'Thanks for contacting us! We will be in touch with you shortly.');
+      } else {
+        return redirect()->back()->withErrors(['message', 'Unforturatelly something went wrong. Please try again later.']);;
+      }
+
+
     }
 }

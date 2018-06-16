@@ -11,7 +11,7 @@
 	</div>
 </div>
 
-<div class="container">
+
 	<div class="row">
 		<div class="col-md-8">
 			<div class="well well-sm">
@@ -77,9 +77,9 @@
 									</form>
 								</div>
 							</div>
-						</div>
 						@include ('layouts.errors')
 						@if(session()->has('message'))
+							<br>
 						    <div class="alert alert-success">
 						        {{ session()->get('message') }}
 						    </div>
