@@ -32,10 +32,10 @@
       </li>
       @else
       <li class="nav-item h5">
-        <a class="nav-link" href="#">{{auth()->user()->name}}</a>
+        <a class="nav-link" href="{{ route('user', ['id' => auth()->user()->id]) }}">{{auth()->user()->name}}</a>
       </li>
       <li class="nav-item h5">
-        <a class="nav-link" href="logout">Log Out</a>
+        <a class="nav-link" href="{{route('logout')}}">Log Out</a>
       </li>
       @endguest
     </ul>

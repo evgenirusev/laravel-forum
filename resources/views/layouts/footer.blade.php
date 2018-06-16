@@ -1,39 +1,59 @@
-
+<!-- Footer -->
 <footer id="footer" class="page-footer font-small blue pt-4 mt-4 w-100" style="background-color: #2196f3; color:#fff;">
-    <!--Footer Links-->
-    <div class="container-fluid text-center text-md-left">
-        <div class="row">
-            <!--First column-->
-            <div class="col-md-6">
-                <h5 class="text-uppercase"  style="margin-left:150px">Footer Content</h5>
-                <p style="margin-left:150px">Welcome </p>
-            </div>
-            <!--/.First column-->
 
-            <!--Second column-->
-            <div class="col-md-6">
-                <h5 class="text-uppercase">Links</h5>
-                <ul class="list-unstyled">
-                    <li>
-                        <a href="http://localhost/forum/public/posts" style="color:#fff">Home</a>
-                    </li>
-                    <li>
-                        <a href="http://localhost/forum/public/contact" style="color:#fff">Contact</a>
-                    </li>
-                    <li>
-                        <a href="http://localhost/forum/public/about" style="color:#fff">About</a>
-                    </li>
-                </ul>
-            </div>
-            <!--/.Second column-->
-        </div>
-    </div>
-    <!--/.Footer Links-->
+  <!-- Footer Links -->
+  <div class="container-fluid text-center text-md-left">
 
-    <!--Copyright-->
-    <div class="footer-copyright py-3 text-center" style="background-color: #1a78c2 !important;">
-        © 2018 Copyright:
-        <a href="https://mdbootstrap.com/material-design-for-bootstrap/" style="color:#fff">Branding </a>
+    <!-- Grid row -->
+    <div class="row">
+
+      <!-- Grid column -->
+      <div class="col-md-6 mt-md-0 mt-3">
+
+        <!-- Content -->
+        <h5 class="text-uppercase">Footer Content</h5>
+        <p>Here you can use rows and columns here to organize your footer content.</p>
+
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none pb-3">
+
+      <!-- Grid column -->
+      <div class="col-md-6 mb-md-0 mb-3">
+
+        <!-- Links -->
+        <h5 class="text-uppercase">Links</h5>
+
+        <ul id="footer-ul" class="list-unstyled">
+          <li>
+            <a href="">Home</a>
+          </li>
+          <li>
+            <a href="">Contact</a>
+          </li>
+          <li>
+            <a href="">About</a>
+          </li>
+          <li>
+            <a href="">Ask A Question</a>
+          </li>
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+
     </div>
-    <!--/.Copyright-->
+    <!-- Grid row -->
+
+  </div>
+  <!-- Footer Links -->
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3" style="background-color: #1a78c2 !important;">© 2018 Copyright:
+    <a href=""> Laravel-forum</a>
+  </div>
+  <!-- Copyright -->
+
 </footer>
+<!-- Footer -->

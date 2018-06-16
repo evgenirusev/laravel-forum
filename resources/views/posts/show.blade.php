@@ -46,7 +46,7 @@
 						<p class="card-text">
 							{{ $comment->body }}
 						</p>
-						<h6 class='float-right'>Answer By: {{ $comment->user->name }}, {{ $comment->created_at->diffForHumans() }}</h6>
+						<h6 class='float-right'>Answer By: <a href="{{ route('user', ['id' => $comment->user->id]) }}")>{{ $comment->user->name }}</a>, {{ $comment->created_at->diffForHumans() }}</h6>
 					</div>
 				</div>
 				<hr>
