@@ -15,3 +15,5 @@ Route::get('/logout', 'SessionController@destroy');
 
 Route::get('/contact', 'ContactController@create')->name('contact');
 Route::post('/contact', 'ContactController@store')->name('contact.store');
+
+Route::get('/user/{id}', 'UsersController@user');

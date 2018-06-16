@@ -1,5 +1,5 @@
 
-<footer class="page-footer font-small blue pt-4 mt-4 w-100" style="background-color: #2196f3; color:#fff;">
+<footer id="footer" class="page-footer font-small blue pt-4 mt-4 w-100" style="background-color: #2196f3; color:#fff;">
     <!--Footer Links-->
     <div class="container-fluid text-center text-md-left">
         <div class="row">

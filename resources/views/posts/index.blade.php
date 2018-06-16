@@ -13,7 +13,7 @@
         <p class="card-text">{{$post->description}}</p>
         <a href="{{ route('posts.show', ['id' => $post->id]) }}" class="btn btn-primary">View</a>
         <br>
-        <a href="#" class="float-right">&nbsp{{$post->user->name}}</a><div class="float-right">Created by:</div>
+        <a href="user/{{$post->user->id}}" class="float-right">&nbsp{{$post->user->name}}</a><div class="float-right">Created by:</div>
       </div>
     </div>
     <br>

@@ -16,7 +16,4 @@
 			@include ('layouts.errors')
 
 		</form>
-
-	<!-- Margin for the footer -->
-	<br><br><br><br><br>
 @endsection(content)
