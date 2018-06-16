@@ -13,13 +13,18 @@ class ContactController extends Controller
     public function store(Request $request) {
 
       $this->validate($request, [
+        'name' => 'required|min:1',
         'email' => 'required|email',
-        'content' => 'required|min:8'
+        'message' => 'required|min:8',
+        'subject' => 'required'
       ]);
 
       $msg = new \App\ContactMessage();
+
+      $msg->name = $request->name;
       $msg->email = $request->email;
-      $msg->content = $request->content;
+      $msg->subject = $request->subject;
+      $msg->message = $request->content;
 
       return redirect()->back()->with('message', 'Thanks for contacting us! We will be in touch with you shortly.');
     }
