@@ -10,7 +10,6 @@
 		<p>Feel free to contact us</p>
 	</div>
 </div>
-<br><br>
 
 <div class="container">
 	<div class="row">
@@ -79,12 +78,10 @@
 								</div>
 							</div>
 						</div>
-						<br>
 						@include ('layouts.errors')
 						@if(session()->has('message'))
 						    <div class="alert alert-success">
 						        {{ session()->get('message') }}
 						    </div>
 						@endif
-						<br><br>
 						@endsection

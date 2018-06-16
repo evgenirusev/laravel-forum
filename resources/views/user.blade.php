@@ -23,6 +23,20 @@
 
     <div class="col-md-6">
       <h3>Comments</h3>
+      @foreach($user->comments as $comment)
+        <div class="card">
+          <div class="card-header">
+            {{$comment->post->title}}
+          </div>
+          <div class="card-body">
+            <p>{{$comment->body}}</p>
+          </div>
+          <div class="card-footer">
+            <a href="{{route('posts.show', $post->id)}}" class="btn btn-link">View Question</a>
+          </div>
+        </div>
+        <hr>
+      @endforeach
     </div>
   </div>
 @endsection
