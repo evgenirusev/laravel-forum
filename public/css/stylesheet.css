@@ -23,3 +23,23 @@ body {
 footer a{
   color:#ffffff;
 }
+
+/*
+ * Main column and sidebar layout
+ */
+
+/* Sidebar modules for boxing content */
+.sidebar-module {
+  padding: 1rem;
+  /*margin: 0 -1rem 1rem;*/
+}
+.sidebar-module-inset {
+  padding: 1rem;
+  background-color: #ffffff;
+  border-radius: .25rem;
+}
+.sidebar-module-inset p:last-child,
+.sidebar-module-inset ul:last-child,
+.sidebar-module-inset ol:last-child {
+  margin-bottom: 0;
+}
