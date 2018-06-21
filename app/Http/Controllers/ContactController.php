@@ -32,6 +32,5 @@ class ContactController extends Controller
         return redirect()->back()->withErrors(['message', 'Unforturatelly something went wrong. Please try again later.']);;
       }
 
-
     }
 }
