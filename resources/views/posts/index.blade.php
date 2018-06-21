@@ -20,7 +20,7 @@
     <br>
     @endforeach
     <hr>
-    @if(isset($posts->links))
+    @if((!isset($_GET['month'])) && (!isset($_GET['year'])))
     {{$posts->links()}}
     @endif
     <br>
@@ -31,7 +31,7 @@
             <ol class="list-unstyled">
               @foreach($archives as $stats)
                 <li>
-                  <a href="http://localhost/laravel-forum/public/?month={{$stats->month}}&year={{ $stats->year }}">
+                  <a href="http://intersolutions.ml/public/?month={{$stats->month}}&year={{ $stats->year }}">
                       {{ $stats['month'] . ' ' . $stats['year'] }}
                   </a>
                 </li>
