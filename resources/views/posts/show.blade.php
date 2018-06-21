@@ -54,7 +54,7 @@
 			@else
 			<hr>
 			<p>
-				There are no answers yet
+				There are no answers yet. Consider submitting one yourself!
 			</p>
 			<hr>
 		@endif

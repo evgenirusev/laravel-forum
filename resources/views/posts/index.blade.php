@@ -20,7 +20,9 @@
     <br>
     @endforeach
     <hr>
+    @if(isset($posts->links))
     {{$posts->links()}}
+    @endif
     <br>
   </div>
   <div class="col-sm-2 blog-sidebar">
@@ -29,7 +31,9 @@
             <ol class="list-unstyled">
               @foreach($archives as $stats)
                 <li>
-                  <a href="#">{{ $stats->month . ' ' . $stats->year }}</a>
+                  <a href="http://localhost/laravel-forum/public/?month={{$stats->month}}&year={{ $stats->year }}">
+                      {{ $stats['month'] . ' ' . $stats['year'] }}
+                  </a>
                 </li>
               @endforeach
             </ol>
