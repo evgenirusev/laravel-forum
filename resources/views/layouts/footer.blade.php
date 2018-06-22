@@ -11,7 +11,7 @@
       <div class="col-md-6 mt-md-0 mt-3">
 
         <!-- Content -->
-        <h5 class="text-uppercase">Author: Evgeni Rusev, Plovdiv</h5>
+        <h5 class="text-uppercase">Author: Evgeni Rusev</h5>
         <p>Open source general purpose forum base on Laravel MVC php framework</p>
 
       </div>
